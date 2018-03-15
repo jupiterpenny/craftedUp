@@ -46,11 +46,11 @@
 
         @media only screen and (min-width: 1100px){
             h1{
-                font-size:80px;
+                font-size:50px;
             }
 
             h2{
-                font-size: 80px;
+                font-size: 50px;
             }
         }
     </style>
@@ -85,8 +85,8 @@
     </div>
 
     <h1 id="ending" style="font-size: 75px; color: white; text-shadow: 3px 3px 2px black; padding-top: 100px; padding-left: 25%;"></h1>
-    <h1 id="ending2" style="font-size: 35px; color: white; text-shadow: 3px 3px 2px black; padding-left: 275px;"></h1>
-    <img id="ending3" src="{{ resourceUrl('/images/site.png') }}" class="animated zoomInDown" style= "width: 80%; padding-left: 45%; height:auto;display:none;"/>
+    <h1 id="ending2" style="font-size: 35px; color: white; text-shadow: 3px 3px 2px black; padding-left: 275px;"><a href="blogClick.twig"></a></h1>
+    <a href="blogClick.twig"><img id="ending3" src="{{ resourceUrl('/images/mouse.png') }}" class="animated zoomInDown" style= "width: 80%; padding-left: 45%; height:auto;display:none;"/></a>
     <script>
 
         function Redirect()
@@ -165,7 +165,7 @@
             document.getElementById('bkg2').style.display = "none";
             document.getElementById('tlt').style.display = "none";
             document.getElementById("ending").innerHTML = "What will we code today?";
-            // document.getElementById("ending2").innerHTML = "@asktechspace.com";
+            document.getElementById("ending2").innerHTML = "Click Computer for Cover Letter";
             document.getElementById("ending2").className = "animated zoomInDown"
             document.getElementById("ending3").style.display = "block"
             document.body.style.backgroundColor = "black";
